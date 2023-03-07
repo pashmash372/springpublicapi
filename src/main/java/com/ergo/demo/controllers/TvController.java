@@ -1,13 +1,21 @@
 package com.ergo.demo.controllers;
 
 import com.ergo.demo.models.Role;
+//import com.ergo.demo.services.ProductService;
+import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/got")
+@AllArgsConstructor
 public class TvController {
+
+
+//    ProductService productService;
 
     @GetMapping("/{id}")
     public ResponseEntity<String> getGot(@PathVariable int id) {
@@ -47,5 +55,20 @@ public class TvController {
 
         return role;
     }
+
+    @GetMapping("/fullList")
+    public String getGotAllList() {
+        RestTemplate restTemplate = new RestTemplate();
+        String url = "https://anapioficeandfire.com/api/characters/";
+        List<?> roles = restTemplate.getForObject(url, List.class);
+
+        return roles.toString();
+    }
+
+
+//    @PostMapping("/addProducts")
+//    public Product createProduct(@RequestBody Product request) {
+//        return productService.createProduct()
+//    }
 
 }
