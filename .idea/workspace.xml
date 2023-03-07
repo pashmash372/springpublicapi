@@ -5,10 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4188d7de-6593-4147-a22a-144210191977" name="Changes" comment="code updated">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ergo/demo/models/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ergo/demo/models/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ergo/demo/services/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ergo/demo/controllers/TvController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ergo/demo/controllers/TvController.java" afterDir="false" />
     </list>
@@ -95,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678182054069</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="code updated">
+      <created>1678185199958</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678185199958</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

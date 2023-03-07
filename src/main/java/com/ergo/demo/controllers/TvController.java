@@ -1,7 +1,6 @@
 package com.ergo.demo.controllers;
 
 import com.ergo.demo.models.Role;
-//import com.ergo.demo.services.ProductService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -57,12 +56,12 @@ public class TvController {
     }
 
     @GetMapping("/fullList")
-    public String getGotAllList() {
+    public List<Role> getGotAllList() {
         RestTemplate restTemplate = new RestTemplate();
         String url = "https://anapioficeandfire.com/api/characters/";
-        List<?> roles = restTemplate.getForObject(url, List.class);
+        List<Role> roles = restTemplate.getForObject(url, List.class);
 
-        return roles.toString();
+        return roles;
     }
 
 
